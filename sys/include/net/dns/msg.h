@@ -70,7 +70,7 @@ typedef struct __attribute__((packed)) {
     uint16_t ancount;   /**< number of answer resource records */
     uint16_t nscount;   /**< number of name server resource records */
     uint16_t arcount;   /**< number of additional records */
-    uint8_t payload[];  /**< payload */
+    uint8_t *payload;   /**< payload */
 } dns_hdr_t;
 
 /**
